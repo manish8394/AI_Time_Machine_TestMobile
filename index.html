@@ -3,58 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fullscreen WebGL Game</title>
+<title>Play Fullscreen Game</title>
 <style>
     body {
         margin: 0;
         padding: 0;
         background: black;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 100vh;
     }
-    button {
+    a.button {
         padding: 15px 25px;
         font-size: 18px;
         background-color: #ff6600;
         color: white;
-        border: none;
         border-radius: 8px;
-        cursor: pointer;
-    }
-    iframe {
-        border: none;
-        width: 100%;
-        height: 100%;
-        display: none;
+        text-decoration: none;
     }
 </style>
 </head>
 <body>
 
-<button id="playBtn">Play Fullscreen</button>
-
-<iframe id="gameFrame" src="https://manish8394.github.io/AI_Time_Machine_TestMobile/"></iframe>
-
-<script>
-    const playBtn = document.getElementById("playBtn");
-    const gameFrame = document.getElementById("gameFrame");
-
-    playBtn.addEventListener("click", () => {
-        playBtn.style.display = "none";
-        gameFrame.style.display = "block";
-
-        if (gameFrame.requestFullscreen) {
-            gameFrame.requestFullscreen();
-        } else if (gameFrame.webkitRequestFullscreen) { // Safari
-            gameFrame.webkitRequestFullscreen();
-        } else if (gameFrame.msRequestFullscreen) { // IE/Edge
-            gameFrame.msRequestFullscreen();
-        }
-    });
-</script>
+<a href="https://manish8394.github.io/AITimeMachine/" class="button">Play Fullscreen</a>
 
 </body>
 </html>
