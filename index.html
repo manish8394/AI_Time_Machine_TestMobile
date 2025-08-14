@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI_Time_Machine — WebGL Embed</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="dot"></span>
+      <h1>AI_Time_Machine</h1>
+    </div>
+
+    <!-- Play Fullscreen (opens original WebGL page in a new tab) -->
+    <a
+      class="btn btn-primary"
+      href="https://manish8394.github.io/AITimeMachine/"
+      target="_blank"
+      rel="noopener"
+      aria-label="Open game in fullscreen"
+      title="Open game in fullscreen"
+    >
+      <!-- inline icon -->
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M7 3H3v4h2V5h2V3zm14 4V3h-4v2h2v2h2zM3 21h4v-2H5v-2H3v4zm18-4h-2v2h-2v2h4v-4zM8 8h8v8H8V8z"/>
+      </svg>
+      Play Fullscreen
+    </a>
+  </header>
+
+  <main class="content">
+    <!-- Responsive iframe wrapper (keeps 16:9 by default) -->
+    <div class="iframe-wrap">
+      <iframe
+        src="https://manish8394.github.io/AITimeMachine/"
+        title="Unity WebGL Game"
+        loading="lazy"
+        allow="fullscreen; gamepad; xr-spatial-tracking; autoplay"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <p class="note">
+      If the game doesn’t fill the screen on mobile, use the
+      <strong>Play Fullscreen</strong> button above (recommended for best performance).
+    </p>
+
+    <!-- Fallback direct link if iframe is blocked -->
+    <p class="fallback">
+      Can’t see the game? <a href="https://manish8394.github.io/AITimeMachine/" target="_blank" rel="noopener">Open it directly</a>.
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <small>© 2025 Your Name</small>
+  </footer>
+</body>
+</html>
