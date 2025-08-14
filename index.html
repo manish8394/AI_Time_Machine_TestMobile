@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI_Time_Machine — Play Fullscreen</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Game Fullscreen</title>
+    <style>
+        body {
+            background: #000;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        button {
+            background: #ff5722;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #e64a19;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1 class="title">AI_Time_Machine</h1>
-    <p class="subtitle">Click below to play in fullscreen</p>
+    <button onclick="openFullscreen()">Play Fullscreen</button>
 
-    <!-- Fullscreen Button -->
-    <a
-      href="https://manish8394.github.io/AI_Time_Machine_TestMobile/"
-      target="_blank"
-      class="play-btn"
-    >
-      Play Fullscreen
-    </a>
-  </div>
+    <script>
+        function openFullscreen() {
+            window.open(
+                'https://manish8394.github.io/AI_Time_Machine_TestMobile/',
+                '_blank',
+                'fullscreen=yes'
+            );
+        }
+    </script>
 </body>
 </html>
